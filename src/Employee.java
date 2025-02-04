@@ -33,6 +33,7 @@ public class Employee {
         return department;
     }
 
+
     public void setDepartment(int department) {
         if (department >= 1 && department <= 5) {
             this.department = department;
@@ -72,7 +73,7 @@ public class Employee {
                 "\nid: " + id +
                 "\nfullName: '" + fullName + '\'' +
                 "\ndepartment: " + department +
-                "\nsalary: " + salary +
+                "\nsalary: " + String.format("%.2f", salary) +
                 "\n}";
     }
 }
